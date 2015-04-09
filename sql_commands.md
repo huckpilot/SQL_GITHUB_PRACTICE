@@ -1,4 +1,4 @@
-CREATE TABLE receipts (id INTEGER PRIMARY KEY, store TEXT, item TEXT, number_of_items INTEGER, price INTEGER, buy_date INTEGER);
+CREATE TABLE receipts (id INTEGER PRIMARY KEY, store TEXT, item TEXT, number_of_items INTEGER, price INTEGER, buy_date TEXT);
 
 All the attributes from all the receipts
 **answer**-- SELECT * FROM receipts;
@@ -17,4 +17,4 @@ All the attributes of receipts where Peter bought multiple items.
 The average number of items purchased on a trip to JC Penny
 **answer**-- SELECT AVG(number_of_items) FROM receipts WHERE store = "JC Penny";
 Great, now add a new receipt representing the purchase of a single "Heatstreet Maple Bourbon", purchased for $40.99 at "Schnapps Haus" on the most recent fourth of July.
-**answer**
+**answer**-- INSERT INTO receipts (store, item, number_of_items, price, buy_date) VALUES ("Schnapps Haus", "Heatstreet Maple Bourbon", 1, 40.99, "July 4 2014");
