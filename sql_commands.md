@@ -1,11 +1,11 @@
 CREATE TABLE receipts (id INTEGER PRIMARY KEY, store TEXT, item TEXT, number_of_items INTEGER, price INTEGER, buy_date INTEGER);
 
 All the attributes from all the receipts
-**answer**-- SELECT * FROM receipts
+**answer**-- SELECT * FROM receipts;
 The store and item names from all the receipts
-**answer**-- SELECT store, item FROM receipts 
+**answer**-- SELECT store, item FROM receipts; 
 All the attributes from all purchases made at Toys R Us
-**answer**
+**answer**-- SELECT * FROM receipts WHERE store = "Toys R Us";
 The item name of each purchase made at Strand.
 **answer**
 The total number of items Peter purchased
